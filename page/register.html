@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GameInfo</title>
+    <link rel="stylesheet" href="../css/for_register.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../picture/G.png" type="image/x-icon">
+    <script src="../js/script.js"></script>
+</head>
+<body>
+<form action="/action_page.php">
+    <div class="container">
+        <h1>Регистрация</h1>
+        <p>Заполните нужыми данными для того что бы зарегестрироваться</p>
+        <hr>
+
+        <label><b>Email</b></label>
+        <label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+        </label>
+
+        <label><b>Пароль</b></label>
+        <label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+        </label>
+
+        <label><b>Пароль</b></label>
+        <label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+        </label>
+        <hr>
+        <p>Обязательно прочтите <a href="privacy.html" target="_blank" >Политику Конфиденциальности</a>.</p>
+
+        <button type="submit" class="registerbtn">Register</button>
+    </div>
+
+    <div class="container signin">
+        <p>У вас уже есть аккаунт? <a href="login.html">Войдите</a>.</p>
+    </div>
+</form>
+</body>
+</html>

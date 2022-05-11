@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>GameInfo</title>
-    <link rel="stylesheet" href="../css/games.css">
+    <link rel="stylesheet" href="../css/game_two.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
@@ -19,14 +19,26 @@
     <ul class="menu">
         <li><a href="../index.html">Домой</a></li>
         <li><a href="#">Список игр</a></li>
-        <li><a href="#">Поддержка</a></li>
+        <li>
+            <div>
+                <a href="../page/login.html">Аккаунт</a>
+            </div>
+        </li>
+        <li>
+            <form class="search" action="">
+                <label>
+                    <input type="search" placeholder="" required>
+                </label>
+                <button type="submit">Поиск</button>
+            </form>
+        </li>
     </ul>
 </nav>
 
 <section class="game">
     <img src="../picture/93jWCB7DBFc.jpg" alt="">
     <p class="name">TV Thief</p>
-    <a href="https://store.steampowered.com/app/1570070/Beholder_3/"><img src="../picture/w-f3lg-1a-A.jpg" class="logo" alt=""> </a>
+    <a href="https://store.steampowered.com/app/1570070/Beholder_3/"><img src="../picture/w-f3lg-1a-A.png" class="logo" alt=""> </a>
     <p class="text">Вас спасла от тюрьмы сотрудница службы безопасности.<br>
         Взамен избавьтесь от тех, кто стоит на пути её секретных планов и поднимитесь по карьерной лестнице,<br>
         работая на двух работах и шпионя за арендаторами, служащими и начальством.<br>
@@ -42,14 +54,16 @@
         Теперь вы государственный шпион под прикрытием в виде арендодателя, выполняющего приказы начальства.<br>
         Взламывайте квартиры жильцов, ищите незаконные предметы и избавляйтесь от неугодных.<br>
     </p>
-    <div class = "button_img">
-        <button id="showContent">Изображения игры</button>
-        <button id="hideContent" style="display:none;">Скрыть изображения игры</button>
-    </div>
-    <div  id="content" style="display:none;">
-        <img src="../picture/Beholder_3_1.jpg" alt="">
-        <img src="../picture/Beholder_3_2.jpg" alt="">
-        <img src="../picture/Beholder_3_3.jpg" alt="">
+    <div class="sim-slider">
+        <ul class="sim-slider-list">
+            <li><img src="../picture/ecran.jpg" alt="screen"></li> <!-- это экран -->
+            <li class="sim-slider-element"><img src="../picture/Beholder_3_1.jpg" alt="0"></li>
+            <li class="sim-slider-element"><img src="../picture/Beholder_3_2.jpg" alt="1"></li>
+            <li class="sim-slider-element"><img src="../picture/Beholder_3_3.jpg" alt="2"></li>
+        </ul>
+        <div class="sim-slider-arrow-left"></div>
+        <div class="sim-slider-arrow-right"></div>
+        <div class="sim-slider-dots"></div>
     </div>
     <table class="requirements">
         <caption>Системные требования:</caption>
@@ -85,7 +99,7 @@
             <li><a href="#">Домой</a></li>
             <li><a href="#">Сотруднечество</a></li>
             <li><a href="#">О нас</a></li>
-            <li><a href="#">Политика конфиденциальности</a></li>
+            <li><a href="../page/privacy.html" target="_blank" >Политика конфиденциальности</a></li>
         </ul>
         <p class="copyright">Game Info © 2022</p>
     </footer>

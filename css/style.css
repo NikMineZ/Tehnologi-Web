@@ -1,14 +1,57 @@
+@import url(https://weloveiconfonts.com/api/?family=fontawesome);
+::-webkit-scrollbar {
+    display: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
 .menu {
     list-style-type: none;
     display: flex;
-    font-size: 30px;
+    font-size: 20px;
     justify-content: space-between;
-    margin: 20px;
-    padding: 10px;
-    max-width: 1800px;
+    position: fixed;   top: 0;   left: 0;   z-index: 9999;   width: 100%;   height: 40px;;
+    background: url(../picture/nav.png) center top / cover;
+    padding-left: 10px;
     align-items: center;
-    border-radius: 5px;
 
+}
+.search {
+    width: 250px;
+    height: 35px;
+    margin: auto;
+    background: #444;
+    background: rgba(0, 0, 0, .2);
+    border-radius: 3px;
+    border: 1px solid #fff;
+}
+input {
+    width: 150px;
+    padding: 10px 5px;
+    float: left;
+    color: #ccc;
+    border: 0;
+    background: transparent;
+    border-radius: 3px 0 0 3px;
+}
+:focus {
+     outline: 0;
+     background:transparent;
+}
+
+button {
+    position: relative;
+    float: right;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    height: 35px;
+    width: 100px;
+}
+
+:focus {
+     outline: 0;
 }
 .New {
     text-align: center;
@@ -19,16 +62,12 @@ a {
     text-decoration: none;
 }
 header {
+    margin-top: 2.3%;
     color: white;
     text-align: center;
     font-size: 100px;
     font-family: 'Syne Mono', monospace;
 
-}
-.cont {
-    background: url(../picture/nav.png) center top / cover;
-    margin: auto;
-    max-width: 2000px;
 }
 body {
     color: white;
@@ -82,4 +121,8 @@ section {
     text-align:center;
     font-size:13px;
     color:#aaa;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }

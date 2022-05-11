@@ -11,16 +11,29 @@
     <script src="js/script.js"></script>
 </head>
 <body>
-<header>
-    <p>GameInfo</p>
-</header>
-<nav class="cont">
+<nav>
     <ul class="menu">
         <li><a href="#">Домой</a></li>
         <li><a href="#">Список игр</a></li>
-        <li><a href="#">Поддержка</a></li>
+        <li>
+            <div>
+                <a href="page/login.html">Аккаунт</a>
+            </div>
+        </li>
+        <li>
+            <form class="search" action="">
+                <label>
+                    <input type="search" placeholder="" required>
+                </label>
+                <button type="submit">Поиск</button>
+            </form>
+        </li>
     </ul>
 </nav>
+<header>
+    <p>GameInfo</p>
+</header>
+
 <div class="New">
     <p>Новинки</p>
     <hr>
@@ -94,7 +107,7 @@
             <li><a href="#">Домой</a></li>
             <li><a href="#">Сотруднечество</a></li>
             <li><a href="#">О нас</a></li>
-            <li><a href="#">Политика конфиденциальности</a></li>
+            <li><a href="page/privacy.html" target="_blank">Политика конфиденциальности</a></li>
         </ul>
         <p class="copyright">Game Info © 2022</p>
     </footer>

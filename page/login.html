@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GameInfo</title>
+    <link rel="stylesheet" href="../css/for_login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../picture/G.png" type="image/x-icon">
+    <script src="../js/script.js"></script>
+</head>
+<body>
+    <div id="login">
+    <form action="javascript:void(0);" method="get">
+        <fieldset class="clearfix">
+            <p>
+                <span class="fontawesome-user"></span>
+                <label>
+                    <input type="text" value="Логин" onBlur="if(this.value == '') this.value = 'Логин'" onFocus="if(this.value == 'Логин') this.value = ''" required>
+                </label>
+            </p>
+            <p>
+                <span class="fontawesome-lock"></span>
+                <label>
+                    <input type="password"  value="Пароль" onBlur="if(this.value == '') this.value = 'Пароль'" onFocus="if(this.value == 'Пароль') this.value = ''" required>
+                </label>
+            </p>
+            <p> <input type="submit" value="ВОЙТИ">  </p>
+        </fieldset>
+    </form>
+    <p>Нет аккаунта? &nbsp;&nbsp;<a href="register.html">Регистрация</a>
+        <span class="fontawesome-arrow-right"></span></p>
+</div>
+</body>
+</html>
