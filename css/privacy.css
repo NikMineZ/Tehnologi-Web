@@ -1,0 +1,22 @@
+body {
+    color: #C4C4C4;
+    background-color: #242424;
+    text-align: left;
+
+}
+.box {
+    border: solid silver 1px;
+
+}
+.little_box {
+    border-bottom: solid silver 1px;
+    font-size: 1.2em;
+}
+p {
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
